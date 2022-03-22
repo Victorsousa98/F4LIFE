@@ -1,0 +1,121 @@
+body {
+	background-color: var(--azul-escuro);
+	color: var(--azul-escuro);
+	overflow-x: hidden;
+}
+
+.container { 
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.flex--centro {
+	align-items: center;
+	justify-content: center;
+}
+
+.flex--coluna {
+	flex-direction: column;
+}
+
+@media(min-width: 800px) {
+  .container {
+		padding-right: 2.5rem;
+		padding-left: 2.5rem;	
+	}
+}
+
+@media(min-width: 1200px) {
+	.container {
+		padding-left: calc((100vw - 900px)/2);
+		padding-right: calc((100vw - 900px)/2);
+	}
+}
+
+.cadastro-cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 1rem;
+}
+
+.cadastro-cabecalho__logo {
+    width: 5rem;
+    margin-bottom: 0.5rem;
+}
+
+.cadastro-cartao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cadastro-cartao__icone-concluido {
+    display: block;
+    width: 3.5rem;
+    height: 3.5rem;
+
+    margin-bottom: 1rem;
+
+    background-image: url(../imagens/icones/checkmark.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cadastro-cartao__titulo {
+    max-width: 20rem;
+}
+
+
+@media(min-width: 800px) {
+    .cadastro-cabecalho__logo {
+        width: 25rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.cartao {
+    background-color: var(--branco);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    width: 100%;
+    max-width: 45rem;
+    padding: 1.75rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.cartao__titulo {
+    margin-bottom: 1rem;
+}
+
+
+.botao {
+    display: block;
+    background-color: var(--branco);
+    border-radius: 7px;
+    border-color: var(--azul-escuro);
+    width: 100%;
+    margin-top: 1rem;
+    max-width: 20rem;
+    padding: 1.125rem;
+    box-sizing: border-box;
+    color: var(--azul-escuro);
+    align-self: center;
+    text-align: center;
+    transition: .3s;
+}
+
+.botao:hover{
+    font-size: 1.1rem;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    border-color: var(--branco);
+}
+

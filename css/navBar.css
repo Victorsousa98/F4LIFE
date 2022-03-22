@@ -1,0 +1,97 @@
+
+
+.cabecalho { /*CONTEINER NAV*/
+  background: var(--azul-escuro);
+  box-shadow: var(--light-shadow);
+}
+.nav-header { /*CONTAINER DE LOGO E BOTÃO*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+.nav-toggle {/*CONTAINER BOTÃO*/
+  font-size: 1.5rem;
+  color: var(--branco);
+  background: transparent;
+  border-color: transparent;
+  transition:  all 0.3s linear;
+  cursor: pointer;
+}
+.nav-toggle:hover {/*CONTAINER BOTÃO*/
+  color: var(--azul-mar);
+  transform: rotate(90deg);
+}
+.logo {/*CONTAINER LOGO*/
+  height: 45px;
+}
+.links a { /*CONTAINER NAV UL LI LINKS*/
+  color: var(--branco);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s linear;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--branco);
+  transition: 0.3s;
+}
+.links a:hover {
+  background: var(--azul-mar);
+  color: var(--branco);
+  padding-left: 1.5rem;
+  width: 100%;
+}
+.links {
+  padding-top: 1rem;
+  height: 0;
+  overflow: hiddeN;
+  transition:  all 0.3s linear;
+  flex-direction: column;
+  align-items: center;
+}
+.show-links {
+  height: 5rem;
+}
+
+
+@media screen and (min-width: 800px) {
+
+  .cabecalho-logo{
+    width: 10rem;
+    padding-left: 1rem;
+  }
+
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+    color: var(--azul-mar);
+  }
+}

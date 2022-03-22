@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--css-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsividade.css">
+    <link rel="stylesheet" href="./css/navBar.css">
+    <link rel="stylesheet" href="./css/modais.css">
+
+    <!--icones-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/4ae2c81b92.js" crossorigin="anonymous"></script>
+
+
+    <!--FONTES-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+
+
+    <title>F4life</title>
+
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <header class="cabecalho">
+        <nav class="nav-center">
+            <div class="nav-header">
+                <img class="cabecalho-logo" src="./imagens/logo-wide.png" alt="logotipo da página"
+                    title="logotipo da página">
+                <!--botão do navbar-->
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <!-- links -->
+            <ul class="links">
+                <li><a class="cabecalho-navegacao-link" href="#sobre">quem somos</a></li>
+                <li> <a class="cabecalho-navegacao-link" href="#contato">fale conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- CHAMADA -->
+        <section class="chamada">
+            <p class="chamada-texto">
+                A F4life é a melhor opção para você que quer estudar sem se preocupar com o descoforto.
+            </p>
+        </section>
+
+        <!-- QUEM SOMOS -->
+        <section class="sobre" id="sobre">
+            <div class="sobre-textos">
+                <h2 class="sobre-titulo titulo">quem somos!</h2>
+                <p class="sobre-texto">F4Life é uma empresa de aluguéis de repúblicas para pessoas universitárias.
+                    Similar aos modelos de Quinto Andar e Loft,
+                    a empresa realiza reformas e prepara moradias
+                    para recepção de pessoas universitárias em um ambiente específico
+                    e otimizado para a vida de graduação</p>
+
+                <a class="sobre-botao botao" href="#apart">confira o seu próximo lar</a>
+            </div>
+            <img class="sobre-imagem" src="./imagens/estudantes.jpeg" alt="estudantes">
+        </section>
+
+        <!-- APARTAMENTOS -->
+        <section class="apartamentos" id="apart">
+            <h2 class="apartamentos-titulo titulo">Apartamentos</h2>
+            <p class="apartamentos-texto">Temos os melhores apartamentos e kitnets, e o melhor, pertinho da sua
+                faculdade!</p>
+            <div class="apartamentos-tipo">
+                <div class="tipo">
+                    <img src="./imagens/apartamento.jpg" alt="baner apartamento">
+                    <a href="./manutencao.html">
+                        <p class="tipo-botao">apartamentos</p>
+                    </a>
+                </div>
+                <div class="tipo">
+                    <img src="./imagens/kit.jpg" alt="baner kitnets">
+                    <a href="./manutencao.html">
+                        <p class="tipo-botao">kitnets</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMULÁRIO -->
+        <section class="formulario" id="contato">
+            <form name="contato" id="contato" action="" onsubmit=" return validaForm(this)">
+                <legend class="formulario-titulo padrao titulo">
+                    Entre em contato conosco!
+                </legend>
+                <label class="descricao padrao" for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" name="nomesobrenome" class="input-padrao padrao">
+                <span class="formulario-erro-nome padrao">texto de erro</span>
+
+                <label class="descricao padrao" for="email">Email</label>
+                <input type="email" id="email" name="email" class="input-padrao padrao" placeholder="xxxxxxx@mail.com">
+                <span class="formulario-erro-email padrao">texto de erro</span>
+
+                <label class="descricao padrao" for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="70" rows="10" class="input-padrao padrao"
+                    placeholder="Deixe sua mensagem"></textarea>
+                    
+                <span class="formulario-erro-mensagem padrao">texto de erro</span>
+
+                <input name="submit" class="formulario-botao botao modal-btn" type="submit" value="Enviar formulário"
+                    id="submit-form">
+            </form>
+
+            <!-- MODAL DE CONFIRMAÇÃO -->
+            <div class="modal-overlay">
+                <div class="modal-container ">
+                    <span><img src="./imagens/icones/checkmark.svg" alt="icone de sucesso"></span>
+                    <span>Mensagem enviada</span>
+                    <span>Obrigado pelo contato, <span id="modal-user">user</span> </span>
+                    <button class="close-btn "><i class="fas fa-times "></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="rodape">
+        <!-- Logotipo e uma breve descrição -->
+        <section class="download">
+            <img class="download-img" src="./imagens/logo-wide.png" alt="logo">
+            <p class="download-texto">O F4life é a plataforma mais simples e completa para quem está buscando moradias
+                compartilhadas. Em poucos passos, você encontra o lugar perfeito para morar com seu colega de quarto
+                ideal.</p>
+
+        </section>
+
+        <!-- REDE SOCIAIS -->
+        <section class="rodape-contato">
+            <h3 class="rodape-titulo">
+                Nossas rede sociais
+            </h3>
+            <div class="icones">
+                <a class="icones-redes" href="https://www.facebook.com/" target="_blank"><img
+                        src="./imagens/icones/facebook.png" alt="icone do facebook"></a>
+                <a class="icones-redes" href="https://www.instagram.com/" target="_blank"><img
+                        src="./imagens/icones/instagram.png" alt="icone do instagram"></a>
+                <a class="icones-redes" href="https://twitter.com/login?lang=pt" target="_blank"><img
+                        src="./imagens/icones/twitter.png" alt="icone do twitter"></a>
+            </div>
+
+            <!-- LINKS DE DOWNLOAD -->
+            <div class="download-links">
+                <a href="https://play.google.com/store?hl=pt_BR&gl=US" target="_blank"><img
+                        src="https://logodownload.org/wp-content/uploads/2017/04/disponivel-google-play-badge-6.png"
+                        alt="disponivel-google-play-badge-6" /></a>
+                <a href="https://apps.apple.com/br/app/apple-store/id375380948" target="_blank"><img
+                        src="https://logodownload.org/wp-content/uploads/2017/05/disponivel-na-app-store-botao-10.png"
+                        alt="disponivel-na-app-store-botao-10" /></a>
+            </div>
+        </section>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="./script/form-error.js"></script>
+    <script src="./script/modal-manutencao.js"></script>
+    <script src="./script/scrol-suave.js"></script>
+    <script src="./script/navBar.js"></script>
+
+</body>
+
+</html>

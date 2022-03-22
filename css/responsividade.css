@@ -1,0 +1,382 @@
+@media(max-width: 1024px){
+    .cabecalho-logo{
+        width: 10rem;
+    }
+
+    .titulo{
+        font-size: 1.2rem;
+    }
+
+
+    .chamada-texto{
+        width: 40rem;
+        font-size: 1.5rem;
+    }
+
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre-imagem{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        width: 30rem;
+    }
+
+    .sobre-texto{
+        width: 50rem;
+    }
+
+    .botao{
+        font-size: 1rem;
+    }
+
+    .apartamentos{
+        padding-bottom: 8rem;
+    }
+
+    .tipo img{
+        width: 20rem ;
+    }
+
+    .formulario{
+        background: white;
+    }
+
+    
+    form{
+        width: 100vw;
+        background: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.50)100%), url("../imagens/baner.jpg");
+        background-size: cover;
+        padding: 0;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+   
+    
+    .input-padrao{
+        width: 10rem;
+    }
+    #mensagem{
+        width: 20rem;
+    }
+
+    .padrao{
+        margin-left: 0;
+    }
+
+
+    .download-img{
+        width: 13rem;
+    }
+
+    .download-texto{
+        width: 25rem;
+    }
+
+    .icones-redes img{
+        width: 2.7rem;
+    }
+
+
+}
+
+
+/*  900PX */
+
+@media(max-width: 900px){
+
+    .chamada-texto{
+        width: 40rem;
+        font-size: 1.5rem;
+    }
+
+
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre-imagem{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        width: 32rem;
+    }
+
+    .apartamentos{
+        padding-bottom: 10rem;
+    }
+
+    .tipo img{
+        width: 17rem ;
+    }
+
+    .formulario{
+        background: white;
+
+    }
+    
+    form{
+        width: 100vw;
+        background: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.50)100%), url("../imagens/baner.jpg");
+        background-size: cover;
+        padding: 2rem;
+    }
+
+    .formulario-botao{
+        align-self: center;
+    }
+    
+    .padrao{
+        margin-left: 2rem;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* 754PX */
+@media(max-width: 768px){
+    .cabecalho-logo{
+        width: 10rem;
+    }
+
+    .titulo{
+        font-size: 1.2rem;
+    }
+
+
+    .chamada-texto{
+        width: 40rem;
+        font-size: 1.5rem;
+    }
+
+
+
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre-imagem{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        width: 30rem;
+    }
+
+    .sobre-texto{
+        width: 40rem;
+    }
+
+    .botao{
+        font-size: .9rem;
+    }
+
+    .apartamentos{
+        padding-bottom: 8rem;
+    }
+
+    .tipo img{
+        width: 15rem ;
+    }
+
+    .formulario{
+        background: white;
+    }
+
+    
+    form{
+        width: 100vw;
+        background: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.50)100%), url("../imagens/baner.jpg");
+        background-size: cover;
+        padding: 0;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+   
+    
+    .input-padrao{
+        width: 10rem;
+    }
+    #mensagem{
+        width: 20rem;
+    }
+
+    .padrao{
+        margin-left: 0;
+    }
+
+
+    .download-img{
+        width: 13rem;
+    }
+
+    .download-texto{
+        width: 25rem;
+    }
+
+    .icones-redes img{
+        width: 2.7rem;
+    }
+}
+
+/* 650px */
+@media(max-width: 650px){
+    .chamada-texto{
+        width: 30rem;
+        font-size: 1rem;
+    }
+ 
+    .sobre-texto{
+        width: 30rem;
+    }
+}
+
+
+/* 500PX */
+@media(max-width: 500px){
+    .cabecalho-logo{
+        width: 8rem;
+    }
+
+    .titulo{
+        font-size: 1.2rem;
+    }
+
+
+    .chamada-texto{
+        width: 20rem;
+        font-size: 1rem;
+    }
+
+
+
+    .sobre{
+        flex-direction: column;
+    }
+    .sobre-imagem{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        border-radius: 10px;
+        width: 20rem;
+    }
+    .sobre-texto{
+        width: 20rem;
+    }
+
+    .botao{
+        width: 20rem;
+        font-size: 1rem;
+    }
+
+    .apartamentos{
+        padding-bottom: 10rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .apartamentos-texto{
+        width: 20rem;
+    }
+
+    .tipo img{
+        width: 10rem ;
+        height: 12rem;
+    }
+
+    .formulario{
+        background: white;
+    }
+
+    
+    form{
+        width: 100vw;
+        background: linear-gradient(rgba(0,0,0,.90), rgba(0,0,0,.50)100%), url("../imagens/baner.jpg");
+        background-size: cover;
+        padding: 0;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+   
+    
+    .input-padrao{
+        width: 10rem;
+    }
+    #mensagem{
+        width: 20rem;
+    }
+
+    .padrao{
+        margin-left: 0;
+    }
+
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-img{
+        width: 13rem;
+    }
+
+    .download-texto{
+        width: 25rem;
+    }
+
+    .rodape-titulo{
+        padding-top: 2rem;
+    }
+
+    .icones-redes img{
+        width: 2.1rem;
+    }
+
+    .download-links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+}
+
+@media(max-width: 400px){
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download-img{
+        width: 13rem;
+    }
+
+    .download-texto{
+        width: 20rem;
+    }
+
+    .rodape-titulo{
+        padding-top: 2rem;
+    }
+
+    .icones-redes img{
+        width: 1.8rem;
+    }
+
+    .download-links{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

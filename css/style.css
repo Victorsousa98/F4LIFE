@@ -1,0 +1,294 @@
+.cabecalho-logo {
+    width: 15rem;
+    padding-left: 1rem;
+}
+
+
+/*CHAMADA*/
+
+.chamada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../imagens/baner.jpg");
+    height: 50vh;
+    background-size: cover;
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+.chamada-texto {
+    width: 50rem;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: rgba(159, 219, 214, .2);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+
+/*QUEM SOMOS*/
+
+.sobre {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--azul-escuro);
+    align-items: center;
+}
+
+.sobre-imagem {
+    width: 40rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.sobre-textos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--branco);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.sobre-titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.sobre-texto {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.sobre-botao {
+    width: 50%;
+    margin-top: 2rem;
+    transition: 0.3s;
+}
+
+.sobre-botao:hover {
+    color: var(--branco);
+    background-color: var(--azul-mar);
+    font-size: 1.1rem;
+}
+
+
+/*APARTAMENTOS*/
+
+.apartamentos {
+    background-color: var(--branco);
+    padding-bottom: 1rem;
+}
+
+.apartamentos-tipo {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    margin: 0 auto;
+}
+
+.apartamentos-titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.apartamentos-texto {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-top: 1.5rem;
+}
+
+.tipo {
+    margin-right: 1.5rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 2px solid var(--azul-escuro);
+    color: #3d3d3d;
+    padding-top: 1.3rem;
+}
+
+.tipo img {
+    width: 20rem;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.tipo a {
+    text-decoration: none;
+}
+
+.tipo:last-child {
+    margin: 0;
+}
+
+.tipo-botao {
+    text-align: center;
+    max-width: 350px;
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid var(--azul-escuro);
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--azul-escuro);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.tipo-botao:hover {
+    color: var(--branco);
+    background-color: var(--azul-mar);
+    font-size: 1.1rem;
+    border-color: white;
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url("../imagens/baner.jpg");
+    background-size: cover;
+    font-size: 1rem;
+    color: var(--branco);
+}
+
+form {
+    padding-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40rem;
+    background-color: var(--azul-escuro);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.formulario-titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: .4rem;
+    padding-bottom: .4rem;
+}
+
+.descricao {
+    padding-top: 1rem;
+    padding-bottom: .25rem;
+    font-weight: bold;
+}
+
+#mensagem {
+    border-radius: 10px;
+}
+
+#nomesobrenome {
+    padding: .5rem;
+    padding-right: 10rem;
+    border-radius: 10px;
+}
+
+#email {
+    padding: .5rem;
+    padding-right: 10rem;
+    border-radius: 10px;
+}
+
+.formulario-botao {
+    background-color: var(--azul-escuro);
+    margin-top: 1rem;
+    transition: .3s;
+    width: 50rem;
+}
+
+.formulario-botao:hover {
+    color: var(--branco);
+    background-color: var(--azul-mar);
+    font-size: .9rem;
+    border-color: white;
+}
+
+.formulario-erro-email,
+.formulario-erro-nome, .formulario-erro-mensagem {
+    margin-top: 1rem;
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.show-formulario-erro {
+    display: block;
+}
+
+
+/*RODAPÉ*/
+
+.rodape {
+    display: flex;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+    padding-top: 1rem;
+}
+
+.download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-left: 1rem;
+}
+
+.download-img {
+    width: 15rem;
+}
+
+.download-texto {
+    width: 35rem;
+    text-align: center;
+    padding-top: 1rem;
+    line-height: 1.5rem;
+}
+
+.download-links a img {
+    width: 9rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.rodape-contato {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 49%;
+}
+
+.rodape-titulo {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.icones-redes img {
+    width: 3rem;
+    padding: 1rem;
+}

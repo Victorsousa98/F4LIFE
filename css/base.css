@@ -1,0 +1,40 @@
+:root{
+    --azul-piscina: #64c5bd;
+    --azul-bebe: rgb(159, 219, 214);
+    --azul-escuro: #142434;
+    --azul-mar: #51a0a2;
+    --cinza: #b4b4bc ;   
+    --branco: white;
+    --sobra: 0 5px 10px #55a6ff38;
+    --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Roboto, Montserrat, "open sans" ;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.botao{
+    text-align: center;
+   
+    width: 10rem;
+    max-width: 350px;
+
+    box-sizing: border-box;
+
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    border: 1px solid var(--branco);
+    border-radius: 5px;
+
+    text-decoration: none;
+    color: var(--branco);
+    text-transform: uppercase;
+    font-weight: bold;
+}

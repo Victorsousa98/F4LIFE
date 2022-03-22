@@ -1,0 +1,24 @@
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--azul-escuro);
+    color: var(--branco);
+}
+
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+p{
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+img{
+    padding-top: 2rem;
+    width: 35rem;
+}
